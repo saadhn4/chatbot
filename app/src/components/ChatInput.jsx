@@ -23,7 +23,12 @@ const ChatInput = ({ chatMessages, setChatMessages }) => {
         id: crypto.randomUUID(),
       },
       {
-        message: <img src="https://supersimple.dev/images/loading-spinner.gif" className="h-[40px] mb-[-10px]" />,
+        message: (
+          <img
+            src="https://supersimple.dev/images/loading-spinner.gif"
+            className="h-[40px]"
+          />
+        ),
         sender: "robot",
         id: crypto.randomUUID(),
       },
@@ -44,13 +49,12 @@ const ChatInput = ({ chatMessages, setChatMessages }) => {
     ]);
   }
   return (
-    <div className="mb-10 flex justify-center items-center">
+    <div className="mb-10 flex justify-end items-center">
       <input
         type="text"
         placeholder="Send message to chatbot"
         onChange={handleChange}
         value={inputText}
-        size={30}
         className="p-3 flex-1 border-1 rounded-xl"
         onKeyDown={useEnter}
       />

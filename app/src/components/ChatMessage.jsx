@@ -11,7 +11,7 @@ const ChatMessage = ({ sender, message }) => {
           src="https://raw.githubusercontent.com/saadhn4/react-course/refs/heads/main/robot.png"
         />
       )}
-      <p className="mx-3 bg-gray-200 max-w-[300px] p-3 rounded-xl">{message}</p>
+      <p className="mx-3 bg-gray-200 max-w-[150px] md:max-w-[300px] p-3 rounded-xl">{message}</p>
       {sender === "user" && (
         <img
           width={50}

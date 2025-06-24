@@ -16,7 +16,7 @@ const App = () => {
     // },
   ]);
   return (
-    <div className="min-h-screen px-4 py-6 sm:px-8 md:px-16 max-w-3xl mx-auto">
+    <div className="min-h-screen px-4 py-6 sm:px-8 md:px-16 md:max-w-3xl mx-auto">
       <ChatInput
         chatMessages={chatMessages}
         setChatMessages={setChatMessages}
