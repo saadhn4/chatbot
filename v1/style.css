@@ -58,14 +58,26 @@ body {
 .app-container {
   max-width: 600px;
   margin: 30px auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.welcome-msg{
+.welcome-msg {
   font-size: 20px;
   text-align: center;
 }
 
-.loading-gif{
+.loading-gif {
   height: 40px;
   margin: -15px;
+}
+
+.chat-messages-container {
+  flex-grow: 1;
+  overflow: scroll;
+  /* these 2 remove scrollbars from side and bottom */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+   padding-bottom: 30px;
 }
