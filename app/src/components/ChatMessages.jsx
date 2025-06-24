@@ -12,11 +12,11 @@ const ChatMessages = ({ chatMessages }) => {
   }, [chatMessages]);
   return (
     <div
-      className="max-h-[600px] overflow-scroll chat-messages-container"
+      className="max-h-[600px] flex-1 overflow-scroll chat-messages-container"
       ref={chatMessagesRef}
     >
       {chatMessages.length === 0 && (
-        <p className="text-gray-400 text-center text-lg font-semibold">
+        <p className="text-gray-400 text-center text-base sm:text-lg font-semibold mt-4">
           Welcome to the chatbot! type "hello"
         </p>
       )}

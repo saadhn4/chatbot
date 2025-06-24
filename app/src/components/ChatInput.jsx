@@ -49,13 +49,13 @@ const ChatInput = ({ chatMessages, setChatMessages }) => {
     ]);
   }
   return (
-    <div className="mb-10 flex justify-end items-center">
+    <div className="mb-10 flex flex-col sm:flex-row items-stretch gap-3">
       <input
         type="text"
         placeholder="Send message to chatbot"
         onChange={handleChange}
         value={inputText}
-        className="p-3 flex-1 border-1 rounded-xl"
+        className="p-3 rounded-xl border w-full"
         onKeyDown={useEnter}
       />
       <button
